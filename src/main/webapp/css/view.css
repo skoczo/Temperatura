@@ -1,0 +1,35 @@
+#wedzarnia {
+	margin: 0 auto;
+	width: 400px;
+	height: 450px;
+}
+
+#zdjecie {
+	margin: 0 auto;
+}
+
+#temp1 {
+	position: absolute;
+	width: 77px;
+	text-align: center;
+	margin: 13% 240px;
+	background: white;
+}
+
+#temp2 {
+	position: absolute;
+	width: 77px;
+	text-align: center;
+	margin: 21% 240px;
+	background: white;
+}
+
+#dwor_temp {
+	position: absolute;
+	width: 77px;
+	text-align: center;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 40px;
+	background: white;
+}

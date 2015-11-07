@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/view.css" />
+</h:head>
+<h:body>
+	<div class="container">
+		<p:panelGrid id="dwor_temp" columns="1">
+			<h:form>
+				<h:outputText id="dwor" value="#{temperatureManager.getDwor()}"
+					style="width: 57px;"/>
+				<p:poll interval="3" update="dwor" />
+			</h:form>
+		</p:panelGrid>
+
+
+		<div id="wedzarnia">
+			<p:panelGrid id="temp1" columns="1">
+				<h:form>
+					<a href="wykres-wedzarnia.xhtml"> <h:outputText id="wedzarnia1"
+						value="#{temperatureManager.getWedzarnia1()}" style="width: 57px;" /></a>
+					<p:poll interval="3" update="wedzarnia1" />
+				</h:form>
+			</p:panelGrid>
+
+			<p:panelGrid id="temp2" columns="1">
+				<h:form>
+					<h:outputText id="wedzarnia2"
+						value="#{temperatureManager.getWedzarnia2()}"
+						style="width: 57px;"/>
+					<p:poll interval="3" update="wedzarnia2" />
+				</h:form>
+			</p:panelGrid>
+			<img id="zdjecie" src="wedzarnia.png" alt="zdjecie wedzarni" />
+		</div>
+	</div>
+
+</h:body>
+</html>
