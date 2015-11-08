@@ -18,9 +18,10 @@
 	<div class="container">
 		<p:panelGrid id="dwor_temp" columns="1">
 			<h:form>
-				<h:outputText id="dwor" value="#{temperatureManager.getDwor()}"
-					style="width: 57px;"/>
-				<p:poll interval="3" update="dwor" />
+				<a href="app/wykres.xhtml"> <h:outputText id="dwor"
+						value="#{temperatureManager.getDwor()}" style="width: 57px;" />
+				</a>
+				<p:poll interval="10" update="dwor" />
 			</h:form>
 		</p:panelGrid>
 
@@ -28,21 +29,24 @@
 		<div id="wedzarnia">
 			<p:panelGrid id="temp1" columns="1">
 				<h:form>
-					<a href="wykres-wedzarnia.xhtml"> <h:outputText id="wedzarnia1"
-						value="#{temperatureManager.getWedzarnia1()}" style="width: 57px;" /></a>
-					<p:poll interval="3" update="wedzarnia1" />
+					<a href="app/wykres.xhtml"> <h:outputText id="wedzarnia1"
+							value="#{temperatureManager.getWedzarnia1()}"
+							style="width: 57px;" />
+					</a>
+					<p:poll interval="10" update="wedzarnia1" />
 				</h:form>
 			</p:panelGrid>
 
 			<p:panelGrid id="temp2" columns="1">
 				<h:form>
-					<h:outputText id="wedzarnia2"
-						value="#{temperatureManager.getWedzarnia2()}"
-						style="width: 57px;"/>
-					<p:poll interval="3" update="wedzarnia2" />
+					<a href="app/wykres.xhtml"> <h:outputText id="wedzarnia2"
+							value="#{temperatureManager.getWedzarnia2()}"
+							style="width: 57px;" />
+					</a>
+					<p:poll interval="10" update="wedzarnia2" />
 				</h:form>
 			</p:panelGrid>
-			<img id="zdjecie" src="wedzarnia.png" alt="zdjecie wedzarni" />
+			<img id="zdjecie" src="img/wedzarnia.png" alt="zdjecie wedzarni" />
 		</div>
 	</div>
 
